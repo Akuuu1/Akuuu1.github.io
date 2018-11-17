@@ -1,8 +1,13 @@
 body{
     font-family: "Times New Roman";
     text-align: center;
+    background: repeating-linear-gradient(90deg, #efeded, #efeded 10px, whitesmoke 10px, whitesmoke 20px);
 }
-
+.big{
+    padding: 0px;
+    border-left: 1px solid #efeded;
+    border-right: 1px solid #efeded;
+}
 p{
     text-indent: 1.5em;
 }
@@ -17,14 +22,20 @@ h3{
     margin-top:10px;
 }
 
+.col-6 h3{
+    background-color: #efeded;
+    border-radius: 20px;
+}
+
 .info img {
     width: 200px;
     border-radius: 50%;
     animation: spin 5s linear 0s infinite;
 }
+
 .main{
-    border-bottom: 1px solid gray;
-    border-top: 1px solid gray;
+    border-bottom: 1px solid #efeded;
+    border-top: 1px solid #efeded;
 }
 
 .carousel-item{
@@ -40,14 +51,13 @@ h3{
     padding-top:10px;
     padding-bottom:10px;
 }
-
 .carousel-indicators li {
     background-color: #999;
     background-color: rgba(70,70,70,.25);
 }
 
 .carousel-indicators .active {
-    background-color: #444;
+    background-color: #999;
 }
 
 .carousel-control-prev-icon {
@@ -61,12 +71,26 @@ h3{
     height:15px;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23444' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
+
 .footer{
-    background-color: #efeded;
+    background: #efeded;
 }
-@keyframes spin {
+
+.anim
+{
+    -webkit-animation: shake 7s linear alternate infinite;
+}
+
+@-webkit-keyframes spin {
     from {transform:rotate(0deg);}
     to {transform:rotate(360deg);}
 }
+
+@-webkit-keyframes shake {
+    100% {
+        -webkit-transform: translateX(-30px);
+    }
+}
+
 @media screen and (min-width: 100px) and (max-width: 450px) {.carousel-item{height: 520px}}
 @media screen and (min-width: 450px) and (max-width: 767px) {.carousel-item{height: 450px}}
