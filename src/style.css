@@ -17,9 +17,10 @@ h3{
     margin-top:10px;
 }
 
-img {
+.info img {
     width: 200px;
     border-radius: 50%;
+    animation: spin 5s linear 0s infinite;
 }
 .main{
     border-bottom: 1px solid gray;
@@ -32,7 +33,7 @@ img {
 
 .f{
     padding: 5px;
-    background: whitesmoke;
+    background: #efeded;
 }
 
 .col-6 h3{
@@ -42,7 +43,7 @@ img {
 
 .carousel-indicators li {
     background-color: #999;
-    background-color: rgba(70,70,70,.25);
+    background-color: #efeded;
 }
 
 .carousel-indicators .active {
@@ -59,6 +60,13 @@ img {
     width:15px;
     height:15px;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23444' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+.footer{
+    background-color: #efeded;
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
 }
 @media screen and (min-width: 100px) and (max-width: 450px) {.carousel-item{height: 520px}}
 @media screen and (min-width: 450px) and (max-width: 767px) {.carousel-item{height: 450px}}
