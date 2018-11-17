@@ -43,7 +43,7 @@ h3{
 
 .carousel-indicators li {
     background-color: #999;
-    background-color: #efeded;
+    background-color: rgba(70,70,70,.25);
 }
 
 .carousel-indicators .active {
