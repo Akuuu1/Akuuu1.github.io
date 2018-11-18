@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="src/style.css">
     <title>Elena Tonkikh</title>
 </head>
-<body class="bg-light text-secondary">
+<body class="bg-light">
 <div class="container bg-white big">
     <div class="d-flex flex-column w-100 align-items-center">
         <div class="header">
@@ -19,7 +19,19 @@
             <h2>developer)0</h2>
         </div>
         <div class="info w-75">
-            <img class="wow fadeInDown" src="src/images/0.jpg" alt="My photo">
+            <div class="container w-100 imgs">
+                <div class="row m-0 w-100 d-flex align-items-center justify-content-center">
+                    <div class="col-3">
+                        <img style="width: 75px" src="src/images/flower.png" alt="Flower">
+                    </div>
+                    <div class="col-6">
+                        <img src="src/images/0.jpg" alt="My photo">
+                    </div>
+                    <div class="col-3">
+                        <img style="width: 75px" src="src/images/flower.png" alt="Flower">
+                    </div>
+                </div>
+            </div>
             <p class="text-justify py-3">
                 Меня зовут Лена, мне 23 года и я начинающий разработчик с большим стремлением к новым знаниям, опыту и
                 профессиональному развитию. Увлекаюсь программированием и обучаюсь
@@ -27,7 +39,7 @@
             </p>
         </div>
         <div class="main w-100">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide wow rotateInDownLeft" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -43,7 +55,7 @@
                                     <h2>Опыт разработки</h2>
                                 </div>
                             </div>
-                            <div class="row m-0">
+                            <div class="row" style="margin-top: 5px">
                                 <div class="col">
                                     <h3>РГГМУ</h3>
                                     <p>Специалитет, «Информационная безопасность ТКС», <i>2015-2020</i></p>
@@ -85,8 +97,35 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-            <div>
-
+            <div class="container-fluid p-0 wow rotateInDownRight">
+                <div class="w-100 text-align-center"><h2 class="f" style="padding: 9px">Галерея!</h2>
+                <h3>temp</h3></div>
+                <div class="card-deck">
+                    <div class="card text-center wow bounceInLeft" data-wow-duration="2s">
+                        <a href="https://pp.userapi.com/c845220/v845220242/11aebc/J3UQGuq8rDo.jpg">
+                            <img src="src/images/1.jpg" class="card-img-top">
+                            <div class="card-body p-0">
+                                <h3 class="card-title">Дом</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card text-center wow bounceInUp" data-wow-duration="2s">
+                        <a href="https://pp.userapi.com/c630325/v630325486/1d5c0/O3FntNLOnFU.jpg">
+                            <img src="src/images/2.jpg"  class="card-img-top">
+                            <div class="card-body p-0">
+                                <h3 class="card-title">Река</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card text-center wow bounceInRight" data-wow-duration="2s">
+                        <a href="https://pp.userapi.com/c845321/v845321239/21017/DrXf3dDo6BI.jpg">
+                            <img src="src/images/3.jpg" class="card-img-top">
+                            <div class="card-body p-0">
+                                <h3 class="card-title">Медведь</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="footer w-100 d-flex justify-content-center">

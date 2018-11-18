@@ -2,9 +2,10 @@ body{
     font-family: "Times New Roman";
     text-align: center;
     background: repeating-linear-gradient(90deg, #efeded, #efeded 10px, whitesmoke 10px, whitesmoke 20px);
+    color: #858e96;
 }
 .big{
-    padding: 0px;
+    padding: 0;
     border-left: 1px solid #efeded;
     border-right: 1px solid #efeded;
 }
@@ -75,12 +76,25 @@ h3{
 .footer{
     background: #efeded;
 }
+a{
+    color: #858e96;
+}
 
 .anim
 {
     -webkit-animation: shake 7s linear alternate infinite;
 }
-
+.card{
+    background-color: #efeded;
+    border: 0px;
+    border-radius: 20px;
+    padding: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.card-deck{
+    margin: 20px;
+}
 @-webkit-keyframes spin {
     from {transform:rotate(0deg);}
     to {transform:rotate(360deg);}
@@ -92,5 +106,9 @@ h3{
     }
 }
 
-@media screen and (min-width: 100px) and (max-width: 450px) {.carousel-item{height: 520px}}
-@media screen and (min-width: 450px) and (max-width: 767px) {.carousel-item{height: 450px}}
+@media screen and (min-width: 100px) and (max-width: 450px) {
+    .carousel-item{height: 520px}
+    .imgs .col-3{display:none;}
+    .imgs .col-6{ max-width: none}
+}
+@media screen and (min-width: 450px) and (max-width: 767px) {.carousel-item{height: 450px} .imgs .col-3{display:none;}}
